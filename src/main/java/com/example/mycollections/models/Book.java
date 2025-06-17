@@ -25,4 +25,10 @@ public class Book extends LibraryItem {
     public void setPages(int pages) {
         this.pages = pages;
     }
+
+    // Override
+    @Override
+    public String toString() {
+        return "Book: " + getName() + " by " + getAuthor() + " (" + getYear() + ") - " + getPages() + " pages";
+    }
 }
